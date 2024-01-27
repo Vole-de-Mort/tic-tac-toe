@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+.title {
+    font-size: 5rem; 
+    color: #dddddd;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: #2d3436;
+}
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+}
+.display {
+    text-align: center;
+}
+.card{
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3498db;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.card:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+#play {
+    background-color: #dcdde1; 
+    color: #2d3436; 
+    border: 2px solid #dcdde1; 
+    padding: 10px 20px; 
+    font-size: 16px;  
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+#play:hover {
+    background-color: #2c3e50;
+    color: #dcdde1; 
+    border-color: #2c3e50; 
+}
+#player {
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    color: #2d3436; /* Dark text color */
+    background-color: #ffffff; /* White background */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
