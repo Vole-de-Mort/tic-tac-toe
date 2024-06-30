@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./logo.png" type="image/png">
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!--
+        chosing to play vs computer or player
+    -->
+    <div class="popUp">
+        <h1>chose the playing mode !</h1>
+        <div class="btns">
+            <button type="button" id="computer">Computer</button>
+            <button type="button" id="human">Human</button>
+        </div>
+    </div>
     <div class="container">
         <h1 class="title">Tic-Tac-Toe</h1>
-        <div class="display">
-            <p id="player">Who is playing ?</p>
+        <div class="info">
+            <div class="player1">
+               <div class="name1">_X_</div>
+                <div class="player1Score x">0</div> 
+            </div>
+            <div class="player2">
+                <div class="name2">_O_</div>
+                <div class="player2Score o">0</div>
+            </div>
         </div>
         <div class="gameboard">
             <div class="card" data-index="0"></div>
@@ -23,7 +41,11 @@
             <div class="card"data-index="7"></div>
             <div class="card"data-index="8"></div>
         </div>
-        <button id="play">Jouer</button>
+        <div class="downBtns">
+            <button class="boutton" id="play">Commence</button>
+            <button class="boutton" id="restart">restart</button>
+        </div>
+        
     </div>
     <script src="./script.js"></script>
 </body>
